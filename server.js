@@ -23,6 +23,7 @@ node  --inspect server.js 8080 FORK
 0x server.js 8081 FORK
 
 git init
+git remote -v
 git add .
 git status
 git diff
