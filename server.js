@@ -21,6 +21,14 @@ node --prof-process bloq-v8.log > result_prof-bloq.txt
 node --prof-process nobloq-v8.log > result_prof-nobloq.txt
 node  --inspect server.js 8080 FORK
 0x server.js 8081 FORK
+
+git init
+git add .
+git status
+git diff
+git commit -m 'Primera version a Heroku'
+heroku git:remote -a githeroku2021
+heroku logs --tail 
 */
 const express = require('express')
 const { Server: HttpServer } = require('http')
